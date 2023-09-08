@@ -1,0 +1,502 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+
+
+
+* {
+    font-family:'Arial', sem serifa;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Oswald', sem serifa;
+    background-image:url('imagens/siteg.jpg') no-repeat;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    width: 100%;
+    height: 100vh;
+}
+
+fieldset{
+    border: 1px solid #908d8d;
+    background-color: white;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.caixa-texto{
+    padding: 6px 9px;
+    border-radius: 3px;
+}
+
+.rotulo{
+    color: black;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+legend{
+    padding: 5px;
+    font-weight: bold;
+    color: black;
+}
+.textarea{
+    padding: 100%;
+}
+
+pre{
+    color: rgb(246, 244, 244) ;
+}
+
+header {
+    background-color:#A1BBD6;
+    margin: auto;
+    padding:20px;
+    min-width: 150px;
+    padding-top: 40px;
+    text-align: center;
+    max-width: 100%;
+    box-shadow: 0px 0px 10px #9ea5a942
+    
+}
+header
+
+header > h1 {
+    padding: 20px;
+    text-align: center;
+    color:#3e6793;
+    text-align: center;
+    font-family: 'Oswald', sem serifa;
+    text-shadow: 2px 2px 0px rgba(86, 82, 82, 0.292);
+
+    
+}
+
+header > p{
+    text-align: center;
+    color: #f5f7f8;
+    font-family: 'Raleway', sem serifa;
+    margin-bottom: 30PX;
+}
+
+i#burguer {
+    background-color: rgba(0, 0, 255, 0);
+    color: rgb(4, 4, 59);
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+}
+i#burguer:hover {
+    background-color:rgb(234, 234, 241);
+    color: blue;
+}
+
+menu {
+    display: none;
+}
+
+menu > ul {
+    list-style-type: none;
+}
+
+menu > ul > li > a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #A1BBD6;
+    color: white;
+    border-top: 2px solid rgba(244, 237, 237, 0.956);
+}
+
+menu > ul > li > a:hover {
+    background-color: #315C89;
+}
+
+main {
+    background-color: #d8dde4;
+    margin: auto;
+    padding: 20px;
+    min-width: 320px;
+    max-width: 1000px;
+    border: 1 px solid rgb(253, 252, 252);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
+    font-family: 'Raleway', sem serifa;
+
+}
+
+mainp{
+    background-color: white;
+    margin: auto;
+    padding: 0px;
+    min-width: 320px;
+    max-width: 1000px;
+    border: 1 px solid rgb(253, 252, 252);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.47);
+    font-family: 'Raleway', sem serifa;
+}
+
+main > p {
+    text-indent: 30px;
+}
+
+main > img {
+    background-color: white;
+    margin: auto;
+    
+
+}
+
+nav {
+    background-color: #315c8900;
+    padding: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: none;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav >a:hover {
+    background-color: #315C89;
+}
+article > h2 {
+    padding-bottom: 20px;
+}
+
+article > p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+h1{
+    color: #315C89;
+    padding: 10px;
+    box-shadow: inset 2px;
+    font-family: 'Oswald', sem serifa;;
+}
+
+footer{
+    background-color:#3e6793;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+div{
+    text-align:left;
+}
+
+input, select, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:left;
+    margin-right: 1em;
+}
+
+/* Elementos de classe "campo" de tag <select> e <option>*/
+.campo select option {
+    padding-right: 1em;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: white;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: rgb(178, 176, 171);
+    border: 2px ;
+    margin-bottom: 1em;
+    color: white;
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: #f5f3f1;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+  }
+  
+  .container {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: white;
+  }
+  
+  .container2 {
+    width: 90%;
+    height: 80%;
+    border-radius: 10px;
+    background: white;
+  }
+  .header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 12px;
+  }
+  
+  .header span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+  }
+  
+  #new {
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(57, 57, 226);
+    
+  }
+  
+  .divTable {
+    padding: 10px;
+    width: auto; 
+    height:inherit; 
+    overflow:auto;
+  }
+  
+  .divTable::-webkit-scrollbar {
+    width: 12px;
+    background-color: whitesmoke; 
+  }
+  
+  .divTable::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(255, 147, 45); 
+  }
+  
+  table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    background-color: rgb(255, 169, 104);
+  }
+  
+  tr {
+    border-bottom: 1px solid rgba(235, 121, 55, 0.356)!important;
+  }
+  
+  tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+  }
+  
+  thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+  }
+  
+  tbody tr {
+    margin-bottom: 50px;
+  }
+  
+  thead tr th.acao {
+    width: 100px!important;
+    text-align: center;
+  }
+  
+  tbody tr td.acao {
+    text-align: center;
+  }
+  
+  @media (max-width: 700px) {
+    body {
+      font-size: 10px;
+    }
+    
+    .header span {
+      font-size: 15px;
+    }
+  
+    #new {
+      padding: 5px;
+      font-size: 10px;
+    }
+  
+    thead tr th.acao {
+      width: auto!important;
+    }
+    
+    td button i {
+      font-size: 20px!important;
+    }
+  
+    td button i:first-child {
+      margin-right: 0;
+    }
+  
+    .modal {
+      width: 90%!important;
+    }
+  
+    .modal label {
+      font-size: 12px!important;
+    }
+  }
+  
+  .modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .modal-container2 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+  }
+  
+  .modal label {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .modal input {
+    width: 100%;
+    outline: none;
+    padding: 5px 10px; 
+    width: 100%;
+    margin-bottom: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  
+  .modal button {
+    width: 100%;
+    margin: 10px auto;
+    outline: none;
+    border-radius: 20px; 
+    padding: 5px 10px; 
+    width: 100%;
+    border: none;
+    background-color: rgb(254, 113, 37);
+    color: white;
+  }
+  
+  .active {
+    display: flex;
+  }
+  
+  .active .modal {
+    animation: modal .4s;
+  }
+  
+  @keyframes modal {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  td button {
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+  }
+  
+  td button i {
+    font-size: 25px;
+  }
+  
+  td button i:first-child {
+    margin-right: 10px;
+  }
+
+  
