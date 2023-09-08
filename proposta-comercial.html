@@ -7,37 +7,208 @@
     <title>Proposta Comercial</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
     <link rel="stylesheet" href="estilo.css">
-
 </head>
 <body>
 <header>
     <div>
         <img src="cd_html_semfundo.png" alt=""></tr>
     </div>
-        <h1>A TECNOLOGIA MOVE O MUNDO!</h1>
-        <p>COMO PODEMOS AJUDAR O SEU NÉGOCIO EVOLUIR DIGITALMENTE?</p>
-         <nav>
+    <h1>A TECNOLOGIA MOVE O MUNDO!</h1>
+    <p>COMO PODEMOS AJUDAR O SEU NÉGOCIO EVOLUIR DIGITALMENTE?</p>
+        <nav>
             <a href="cd.02tec-computador.html">Início</a>
             <a href="pag-sobre nos.html">Sobre Nós</a>
             <a href="fale-conosco.html">Contato</a>
-            <a href="CD-TECNOLOGIA/proposta-comercial.html">Proposta Comercial</a>
+            <a href="proposta-comercial.html">Proposta Comercial</a>
         </nav>
 </header>
-            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>    
-            <menu id="itens">
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>    
+        <menu id="itens">
             
-        <ul>
+            <ul>
             <li><a href="cd.02tec-computador.html">Início</a></li>
             <li><a href="pag-sobre nos.html">Sobre Nós</a></li>
             <li><a href="fale-conosco.html">Contato</a></li>
-            <li><a href="CD-TECNOLOGIA/proposta-comercial.html">Proposta Comercial</a></li>
+            <li><a href="proposta-comercial.html">Proposta Comercial</a></li>
         </ul>
         </menu>
-        <pre>.</pre>
+        <br>
         <main>
             <article>
+                <h1>Proposta Comercial Simplificada</h1>
+                <p><label for="Empresa"><strong>Empresa</strong></label>
+                    <select id="Empresa" required>
+                      <option selected disabled value="">Selecione</option>
+                      <option>Acelor-Tubarão/CNPJ 17.469.701/0104-82</option>
+                      <option>Acelor-Funcionarios/CNPJ 17.469.701/0001-77</option>
+                      <option>Acelor-Boa Viagem/CNPJ 25.549.361/0001-12</option>
+                      <option>Belgo-Cid.Industrial/CNPJ 61.074.506/0001-30</option>
+                    </select>
+                </div>
+                <onclick="empressa()"> </p>
+                    <h3>Data:</h3><div id="div_data">Data:</div>
+                <p><label for="A/C"><strong>A/C</strong></label>
+                    <select id="A/C" required>
+                      <option selected disabled value="Selecione">Selecione</option>
+                      <option>Marta Sarafim</option>
+                      <option>Juliana Vasconcelos</option>
+                      <option>Rodrigo Faco</option>
+                      <option>Fabio Reis</option>
+                      <option>Renata Santos</option>
+                    </select>
+                </div></p>
+        
+                    <div class="campo">
+                        <label for="objetivo"><strong>Objetivo: </strong></label>
+                        <textarea rows="5" style="width: 20em" id="objetivo" name="objetivo"></textarea>
+                        <label for="escopo"><strong>Escopo do detalhamento: </strong></label>
+                        <textarea rows="5" style="width: 20em" id="escopo" name="escopo"></textarea>
+                    </div>
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-6 col-s-12">
+                                <div class="container">
+                                    <div class="header">
+                                      <span>Lista de serviços</span>
+                                      <button onclick="openModal()" id="new">Incluir</i></button>
+                                    </div>
+                                
+                                    <div class="divTable">
+                                      <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Produto/Serviço</th>
+                                            <th>Descrição</th>
+                                            <th>Preço/Unitário</th>
+                                            <th>Quantidade</th>
+                                            <th>Valor</th>
+                                            <th class="acao">Editar</th>
+                                            <th class="acao">Excluir</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                
+                                    <div class="modal-container">
+                                      <div class="modal">
+                                        <form>
 
-            </article>
-    
+                                          <label for="m-servico">Produto/Serviço</label>
+                                          <input id="m-servico" type="text" required />
+                                  
+                                          <label for="m-descricao">Descrição</label>
+                                          <input id="m-descricao" type="text" required />
+                                  
+                                          <label for="m-preco">Preço/Unitário</label>
+                                          <input id="m-preco" type="number" required />
+
+                                          <label for="m-quantidade">Quantidade</label>
+                                          <input id="m-quantidade" type="number" required />
+
+                                          <label for="m-valor">Valor</label>
+                                          <input id="m-valor" type="number" required />
+                    
+
+                                          <button id="btnSalvar">Salvar</button>
+                                          <button><a href="proposta-comercial.html"> Voltar </button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                    <div>
+                                    <label for="m-total">Total:</label>
+                                    <input id="m-total" type="text" required />
+                                    </div>
+                                    <br>
+
+                                    </article>
+                                    </table>
+                                    <br>
+
+                                    
+                    <br>
+                    <button class="botao" type="submit" onsubmit=""> </a></button>
+                  <br>
+                   
+                                      
+
+                                      <div class="form-group"></div>
+                                      <div class="header">
+                                      <span>Opções de pagamento</span>
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                      
+                                    </div>
+                                
+                                    <div class="divTable">
+                                      <div id="condicoes2"></div>
+                                      <table>
+                                        <thead>
+                                          <tr>
+                                            <th>Percentual</th>
+                                            <th>Descrição</th>
+                                            <th>Valor</th>
+                                            <th class="acao">Adicionar</th>
+                                            <th class="acao">Excluir</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                     
+                              
+                                          <tbody>
+                                            <div id="condicoes"></div>
+                                            &nbsp;&nbsp;
+                                            <label for="m-porcentagem"></label>
+                                            <select id="m-porcentagem" required>
+                                            <option selected disabled value="">Selecione</option>
+                                            <option>10%</option>
+                                            <option>20%</option>
+                                            <option>30%</option>
+                                            <option>40%</option>
+                                            <option>50%</option>
+                                            <option>60%</option>
+                                            <option>70%</option>
+                                            <option>80%</option>
+                                            <option>90%</option>
+                                            <option>100%</option>
+                                            </select>
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+                                            <label for="m-descricao2"></label>
+                                            <input id="m-descricao2" type="text" required />
+                                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <label for="m-valor2"></label>
+                                            <input id="m-valor2" type="string" required />
+                                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                                            <button type="button" onclick="adicionarCampo()"> + </button>
+                                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                                            &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+                                            &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+
+                                            <button type="button" onclick="removerCampo()"> - </button>
+                                            
+
+
+
+                                        
+                                          </form>
+                                        </div>
+                                      </div>
+                                      </tbody>
+                                      <br>
+  
+                                          
+
+                                                   
+
+
+    <br>
+    <footer> @Site criado por Gabriela Rocha e William Oliveira.</footer>
 </body>
+<script src="script.js"></script>
 </html>
+
